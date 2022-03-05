@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient( rgba(26,0,19,1) 0%, rgba(68,10,60,1) 53%, rgba(122,43,105,1) 100%);
+    color: whitesmoke;
+    margin-left: 10px;
+    margin-top: 55px;
+}
+.topnav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.topnav a.active{
+    background-color: #490f49;
+    color: whitesmoke;
+}
+.topnav li{
+    width: 25%;
+}
+footer {
+    position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #160110c2;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 12px;
+}
+    
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #330033;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: whitesmoke;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #490f49;
+    color: whitesmoke;
+}
+/* index.html styles */
+.logo {
+    max-width: 17%;
+    float: right;
+    margin: 15px;
+}
+.presentation {
+    max-width: 80%;
+    text-align: center;
+    left: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/chokoCake.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.intro {
+    max-width: 50%;
+    color: whitesmoke;
+    padding: 16px;
+    font-size: x-large;
+    position: relative;
+    left: 27%;  
+}
+.intro a {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .intro a:hover {
+    opacity: 0.8;
+  }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    max-width: 300px;
+    margin: 1%;
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .price {
+    color: rgb(180, 180, 180);
+    font-size: 22px;
+  }
+
+/*  */
+.menu {
+    display: inline-block;
+    color: whitesmoke;
+    width: 100%;
+}
+.container {
+    display:flex;
+    align-items: center;
+	flex-wrap: wrap;
+}
+
+/* order */
+#desc {
+    width: 50%;
+    height: 100px;
+}
+/* bakers */
+.cakesBake {
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
+.topBake {
+    text-align:left;
+    padding: 5px;
+    margin: 5px;
+}
+.orderTable {
+    text-align: right;
+    width: 100%;
+    border-collapse: collapse;
+}
+.orderTable td {
+    border: 2px solid #f2f2f2;
+}
+.orderBake {
+    overflow-x: auto;
+}
+/* snackbar */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #24021ac2;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }

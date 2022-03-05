@@ -1,2 +1,2 @@
-# LaunchX_Frontend_html
-Practica html
+# Burstniart.github.io
+Frontend project site week 2

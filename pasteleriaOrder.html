@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./missfit.css">
+    <link rel="icon" href="https://i.imgur.com/aEhQik1.jpeg">
+    <title>Ordena Pasteleria Mercurio</title>
+</head>
+<body>
+    <div class="topnav">
+        <ul>
+            <li><a  href="./index.html">Inicio</a></li>
+            <li><a class="active"href="./pasteleriaOrder.html">Orden</a></li>
+            <li><a  href="./pasteleriaBaker.html">Panel</a></li>
+        </ul>
+    </div>
+    <img class="logo" src="images/noNameLogo.png">
+    <h1>Pasteleria Mercurio</h1>
+    <br>
+    <h2>Ordenar</h2>
+    <form action="" id="form1" method="post">       
+        <h3>Elige tu sabor:</h3>
+        <input type="checkbox" id="falvor1" name="falvor1" value="Chocolate">
+        <label for="falvor1">Chocolate</label><br>
+        <input type="checkbox" id="flavor2" name="flavor2" value="Tres Leches">
+        <label for="flavor2">Tres Leches</label><br>
+        <input type="checkbox" id="flavor3" name="flavor3" value="Mocha">
+        <label for="flavor3">Mocha</label><br>          
+        <br>
+        <h3>Elige la decoracion:</h3>
+        <input type="checkbox" id="topping1" name="topping1" value="Chispitas de colores">
+        <label for="topping1">Chispitas de colores</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Chispas de chocolate">
+        <label for="topping2">Chispas de chocolate</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Canela en polvo">
+        <label for="topping3">Canela en polvo</label><br>
+        <input type="checkbox" id="topping4" name="topping4" value="Mermelada de fresa">
+        <label for="topping4">Mermelada de fresa</label><br><br>      
+        <span class="comments">
+            <label for="desc">Comentarios o indicaciones:</label><br><br>
+            <textarea id="desc" name="desc"></textarea>
+        </span>
+        <br><br>       
+        <hr>
+        <h3>Datos de contacto</h3>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>       
+        <label for="correo1">Correo:</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>    
+        <label for="numero1">Número de tel:</label><br>    
+        <input type="number" id="numero1" name="numero1"><br><br>
+        <p>Pastel de sabor:</p>
+        <P>Decorado con:</P>
+        <p>Total a pagar:</p>
+        <br><br>       
+    </form>
+    <!-- Muestra una ventana confirmando la orden -->
+    <button onclick="myFunction()">Ordenar</button>
+    <br><br><br>
+    <div id="snackbar">Orden recibida</div>
+    <footer>
+        <hr>
+        <h3>Pasteleria Mercurio S.A. de C.V.</h3>
+        <p>Dirección: Calle de la ciudad, Col. Centro #213 Puebla, Puebla</p>
+        <p>Teléfono: ##########</p>
+        <p>Horarios de atención: 9 am - 8 pm</p>
+        <br>
+    </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("snackbar");
+          x.className = "show";
+          setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+        </script>
+</body>
+</html>
